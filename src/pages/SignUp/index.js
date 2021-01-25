@@ -34,6 +34,9 @@ class SignUp extends Component {
   };
 
   render() {
+    // inline CSS
+    const btnStyle = { color: "WhiteSmoke", backgroundColor: "Indigo" };
+
     return (
       <Container>
         <Form onSubmit={this.handleSignUp}>
@@ -43,6 +46,8 @@ class SignUp extends Component {
             type="text"
             placeholder="Nome de usuário"
             onChange={(e) => this.setState({ username: e.target.value })}
+            // inline CSS
+            style={{ backgroundColor: "AliceBlue" }}
           />
           <input
             type="email"
@@ -54,7 +59,10 @@ class SignUp extends Component {
             placeholder="Senha"
             onChange={(e) => this.setState({ password: e.target.value })}
           />
-          <button type="submit">Cadastrar grátis</button>
+          {/* inline CSS */}
+          <button type="submit" style={btnStyle}>
+            Cadastrar grátis
+          </button>
           <hr />
           <Link to="/">Fazer login</Link>
         </Form>
