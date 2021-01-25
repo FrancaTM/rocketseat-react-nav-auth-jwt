@@ -1,5 +1,6 @@
 import React from "react";
 import Routes from "./routes";
+import "./styles/global";
 // import logo from './logo.svg';
 // import './App.css';
 
