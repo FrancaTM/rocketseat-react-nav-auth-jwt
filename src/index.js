@@ -1,3 +1,6 @@
+// Iniciando com ReactJS: Navegação e Autenticação com JWT
+// https://blog.rocketseat.com.br/reactjs-autenticacao/
+
 import React from "react";
 import ReactDOM from "react-dom";
 // import './index.css';
