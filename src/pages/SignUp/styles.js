@@ -1,4 +1,24 @@
-import styled from "styled-components";
+// CSS in JS sample
+
+// Getting started
+// https://styled-components.com
+import styled, { css } from "styled-components";
+
+export const Button = styled.button`
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid palevioletred;
+  color: palevioletred;
+  margin: 0 1em;
+  padding: 0.25em 1em;
+
+  ${(props) =>
+    props.primary &&
+    css`
+      background: palevioletred;
+      color: white;
+    `};
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -39,15 +59,15 @@ export const Form = styled.form`
       color: #999;
     }
   }
-  button {
-    color: #fff;
-    font-size: 16px;
-    background: #fc6963;
-    height: 56px;
-    border: 0;
-    border-radius: 5px;
-    width: 100%;
-  }
+  // button {
+  //   color: #fff;
+  //   font-size: 16px;
+  //   background: #fc6963;
+  //   height: 56px;
+  //   border: 0;
+  //   border-radius: 5px;
+  //   width: 100%;
+  // }
   hr {
     margin: 20px 0;
     border: none;

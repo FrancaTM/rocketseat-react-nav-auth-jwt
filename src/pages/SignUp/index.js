@@ -3,7 +3,8 @@ import { Link, withRouter } from "react-router-dom";
 
 import Logo from "../../assets/airbnb-logo.svg";
 
-import { Form, Container } from "./styles";
+// CSS in JS sample
+import { Form, Container, Button } from "./styles";
 
 import api from "../../services/api";
 
@@ -65,6 +66,8 @@ class SignUp extends Component {
           </button>
           <hr />
           <Link to="/">Fazer login</Link>
+          {/* CSS in JS sample */}
+          <Button primary>CSS in JS sample</Button>
         </Form>
       </Container>
     );
